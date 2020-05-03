@@ -37,7 +37,16 @@ Search email using various catagories like sender’s name, email subject, date.
 
 ### Problem Statement 4: Craete Voice assistant using Dialogflow and integrate with this application:
 Create voice assistant using Dialogflow and integrate voice assistant in react JS environment. Also integrated voice assistant with email application. Voice assistant fetch all the emails based on user's command. Voice assistant search emails based on user's command.
-It will read all emails as well as display it in tabular form. Voice assistant respond and perform specific task based on user’s question and training of voice assistant.
+It will read all emails as well as display it in tabular form. Voice assistant respond and perform specific task based on user’s question and training of voice assistant. If user, ask ‘show all emails’ then it will read all emails as well as display it. If user, ask to search specific email from sender then it will read those emails and display it. If user, ask to search how many emails received from sender then it will do that. Trained the voice assistant in Dilogflow 
+
+![Dialogflow-Workflow-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Dialogflow-workflow.jpg)
+
+
+## Implementation:
+
+Final Application Screenshots:
+
+
 
 
 
