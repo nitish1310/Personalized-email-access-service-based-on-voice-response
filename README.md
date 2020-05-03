@@ -17,4 +17,8 @@ The Actions on Google integration in Dialogflow allows interoperability between 
 
 Google Cloud’s Vision API offers powerful pre-trained machine learning models through REST and RPC APIs. Assign labels to images and quickly classify them into millions of predefined categories. Detect objects and faces, read printed and handwritten text, and build valuable metadata into your image catalog. Google Vision can detect whether you’re a cat or a human, as well as the parts of your face. It tries to detect whether you’re posed or doing something that wouldn’t be okay for Google Safe Search—or not. It even tries to detect if you’re happy or sad.
 
-![Google-Vision API-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Google-Vision-API.JPG)
+![Google-Vision-API-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Google-Vision-API.JPG)
+
+Gmail API help us to read and send messages, manage drafts and attachments, search threads and messages, work with labels, setup push notifications, and manage Gmail settings. 
+
+![Gmail-API-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Gmail-API.JPG)
