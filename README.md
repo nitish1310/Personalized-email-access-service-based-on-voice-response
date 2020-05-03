@@ -22,3 +22,20 @@ Google Cloud’s Vision API offers powerful pre-trained machine learning models 
 Gmail API help us to read and send messages, manage drafts and attachments, search threads and messages, work with labels, setup push notifications, and manage Gmail settings. 
 
 ![Gmail-API-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Gmail-API.JPG)
+
+## Problem Definition:
+In this project, I am planning to analyze the below problem statements:
+
+### Problem Statement 1: Fetch all email from Gmail using Google’s Gmail API and Convert text to speech of emails using Google’s Cloud text-to-speech API:
+Read the sender’s name from email. Read the subject matter and remove ‘RE’ and ‘FW’ from received emails. Read the email date and time (up to min). Save all emails in local memory so that it can be access during offline. Customize pitch rate, speed information, voice gender and type, audio device profile and language.
+
+### Problem Statement 2: Read attachment details:
+It should the name of attachment, type & size along with the email content. Using Google Vision API assign labels to images and quickly classify them into millions of predefined categories. Detect objects and faces, read printed and handwritten text, and build valuable metadata into your image catalog.
+
+
+
+
+
+
+
+
