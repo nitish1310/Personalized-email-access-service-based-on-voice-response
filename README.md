@@ -32,6 +32,17 @@ Read the sender’s name from email. Read the subject matter and remove ‘RE’
 ### Problem Statement 2: Read attachment details:
 It should the name of attachment, type & size along with the email content. Using Google Vision API assign labels to images and quickly classify them into millions of predefined categories. Detect objects and faces, read printed and handwritten text, and build valuable metadata into your image catalog.
 
+### Problem Statement 3: Search email using various catagories:
+Search email using various catagories like sender’s name, email subject, date. It will tell how many emails received from user if asked. 
+
+### Problem Statement 4: Craete Voice assistant using Dialogflow and integrate with this application:
+Create voice assistant using Dialogflow and integrate voice assistant in react JS environment. Also integrated voice assistant with email application. Voice assistant fetch all the emails based on user's command. Voice assistant search emails based on user's command.
+It will read all emails as well as display it in tabular form. Voice assistant respond and perform specific task based on user’s question and training of voice assistant.
+
+
+
+ 
+
 
 
 
