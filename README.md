@@ -54,7 +54,7 @@ Final Application Screenshots:
 
 ![Voice-Assistant2-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Voice-Assistant2.JPG)
 
-![Voice-Assistant3-image](https://github.com/nitish1310/Personalizedemail-access-service-based-on-voice-response/blob/master/Images/Voice-Assistant3.JPG)
+![Voice-Assistant3-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Voice-Assistant3.JPG)
 
 ![Voice-Assistant4-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Voice-Assistant4.JPG)
 
