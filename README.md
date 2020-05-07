@@ -46,7 +46,21 @@ It will read all emails as well as display it in tabular form. Voice assistant r
 
 Final Application Screenshots:
 
+![home1-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/home1.JPG)
 
+![home1-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/home2.JPG)
+
+![Voice-Assistant1-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Voice-Assistant1.JPG)
+
+![Voice-Assistant2-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Voice-Assistant2.JPG)
+
+![Voice-Assistant3-image](https://github.com/nitish1310/Personalizedemail-access-service-based-on-voice-response/blob/master/Images/Voice-Assistant3.JPG)
+
+![Voice-Assistant4-image](https://github.com/nitish1310/Personalizedemail-access-service-based-on-voice-response/blob/master/Images/Voice-Assistant4.JPG)
+
+![All-Emails-image](https://github.com/nitish1310/Personalizedemail-access-service-based-on-voice-response/blob/master/Images/All-Emails.JPG)
+
+![Features-image](https://github.com/nitish1310/Personalizedemail-access-service-based-on-voice-response/blob/master/Images/Features.JPG)
 
 
 
