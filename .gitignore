@@ -5,4 +5,5 @@ token.json
 db.js
 test.js
 public/music/
+public/doc/
 node_modules
