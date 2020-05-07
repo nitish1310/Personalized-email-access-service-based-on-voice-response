@@ -24,7 +24,7 @@ Gmail API help us to read and send messages, manage drafts and attachments, sear
 ![Gmail-API-image](https://github.com/nitish1310/Personalized-email-access-service-based-on-voice-response/blob/master/Images/Gmail-API.JPG)
 
 ## Problem Definition:
-In this project, I am planning to analyze the below problem statements:
+In this project, I am planning to solve the below problem statements:
 
 ### Problem Statement 1: Fetch all email from Gmail using Google’s Gmail API and Convert text to speech of emails using Google’s Cloud text-to-speech API:
 Read the sender’s name from email. Read the subject matter and remove ‘RE’ and ‘FW’ from received emails. Read the email date and time (up to min). Save all emails in local memory so that it can be access during offline. Customize pitch rate, speed information, voice gender and type, audio device profile and language.
