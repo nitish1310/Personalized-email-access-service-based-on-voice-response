@@ -60,7 +60,7 @@ Final Application Screenshots:
 
 ![All-Emails-image](https://github.com/nitish1310/Personalizedemail-access-service-based-on-voice-response/blob/master/Images/All-Emails.JPG)
 
-![Features-image](https://github.com/nitish1310/Personalizedemail-access-service-based-on-voice-response/blob/master/Images/Features.JPG)
+![Features-image](https://github.com/nitish1310/Personalizedemail-access-service-based-on-voice-response/blob/master/Images/Features.JPG) 
 
 
 
