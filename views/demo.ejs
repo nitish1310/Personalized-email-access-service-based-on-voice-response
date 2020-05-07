@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Demo Website" />
+  <meta name="author" content="Nitish" />
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+  <title>Demo Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/" />
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- <style type="text/css">
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+
+      body {
+        /* margin-bottom: 60px;
+        margin-top: 60px; */
+        margin: 0;
+      }
+
+      .footer {
+        /* position: absolute; */
+        bottom: 0;
+        width: 100%;
+
+        height: 60px;
+        line-height: 60px;
+        background-color: #dbdbdb;
+      }
+
+      body > .container {
+        padding: 60px 15px 0;
+      }
+
+      .footer > .container {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      code {
+        font-size: 80%;
+      }
+
+      .bg-dark {
+        background-color: #ffffff !important;
+      }
+
+      .navbar {
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+        box-shadow: 0 8px 6px -6px #999;
+
+        /* the rest of your styling */
+      }
+    </style> -->
+</head>
+<!-- <body> -->
+
+<body onLoad="setup();">
+  <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <img src="images/loading.png" alt="Voice Assistant" height="30px" />
+    <a class="navbar-brand" href="/" style="font-size: 23px; padding-left: 10px;"><span
+        style="color: #757575; font-weight: 500;">Voice</span>
+      <span style="color: #757575;">Assistant</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="images/google-play.png" alt="google-play" height="50px" />
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide shadow" data-ride="carousel" style="margin-top: 5px;">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="#voice">
+        <img class="d-block w-100" src="images/slider1.jpg" alt="First slide" />
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#voice">
+        <img class="d-block w-100" src="images/slider2.jpg" alt="Second slide" />
+        </a>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- <header>
+      <nav class="navbar navbar-default topnav bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><span style="color: #757575; font-weight: 500;">Voice</span>
+            <span style="color: #757575;">Assistant</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> -->
+  <div style="background: url(../images/background.jpg) 0 0 no-repeat;background-size: 1800px 900px;">
+    <section style="margin-top: 80px;">
+      <div class="container" id="voice">
+        <h1 style="text-align: center; margin-bottom: 70px;">
+          Voice Assistant
+        </h1>
+        <div class="row" >
+          <!-- <div class="col-md-4 "></div> -->
+          <div class="col-4 offset-4">
+            <button style="border-radius: 50%;">
+              <i class="fa fa-microphone"></i>
+            </button>
+          </div>
+          <!-- <div class="col-4 "></div> -->
+        </div>
+        <div style="margin-top: 30px;">
+          <p>You said: <em class="output-you">...</em></p>
+          <p>
+            Voice Assistant replied:
+            <em class="output-bot">...</em>
+          </p>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-4 offset-1">
+            <h6 hidden>Email: <label id="lblName">0</label></h6>
+            <audio id="audio2" src="/music/email0.mp3" controls="controls" autoplay="autoplay" align=""></audio>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+
+          <div class="col-4 offset-4">
+            <input class="btn btn-primary" style="margin-top: 30px;" type="button" value="Next Email"
+              onclick="play()" />
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- <div class="container" style="margin-top: 100px; margin-bottom: 200px;">
+        <h3>Listen Emails:</h3> -->
+  <!-- <h4>Sender: <label id="lblSender">0</label></h4>
+
+      <audio
+        id="audio1"
+        src="/music/sender0.mp3"
+        controls="controls"
+        autoplay="autoplay"
+        align=""
+      ></audio> -->
+  <!-- <hr />
+        <h4>Email: <label id="lblName">0</label></h4>
+        <audio
+          id="audio2"
+          src="/music/email0.mp3"
+          controls="controls"
+          autoplay="autoplay"
+          align=""
+        ></audio>
+        <br />
+        <input
+          class="btn btn-primary"
+          style="margin-top: 30px;"
+          type="button"
+          value="Next Email"
+          onclick="play()"
+        />
+
+        <br /> -->
+  <!-- <form action="/searchEmail" method="GET">
+        <input type="text" name="name" />
+        <input type="text" name="subject" />
+        <input class="btn btn-primary" type="submit" value="Submit" />
+      </form> -->
+  <!-- 
+        <br />
+        <br />
+      </div> -->
+  </div>
+  <div class="container">
+    <h1 style="text-align: center;margin-top: 90px; margin-bottom: 90px;">
+      All Emails
+    </h1>
+  
+    <table class="table table-hover table-striped">
+      <thead>
+        <tr>
+          <!-- <th>ID</th> -->
+          <th>From</th>
+          <th>Subject</th>
+          <th>Date</th>
+          <th>Email Body</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>1716567cae119086</td> -->
+          <td>Soman, Nitish Subhash</td>
+          <td>Wed, 06 May 2020</td>
+          <td>Testing AWS</td>
+
+          <td>
+            Hello Nitish,
+
+            I am attaching an image attachment  along with this email. Please check and let me know.
+            
+            Thanks and regards,
+            Nitish Soman
+            Attachment Details: The attachment along with this email is Profile-Small.jpg. The Attachment type is image/jpeg. The Attachment size is 194 kb. This attachment image has labels like Forehead, Facial hair, White-collar worker . It has someone face with Joy expression. It has some text are RID UNIVE BRIDC |ERS UNIVER FUU ORID DGE RID UNIVE BRIDC |ERS
+            UNIVER FUU ORID DGE
+          </td>
+        </tr>
+        <tr>
+          
+            <!-- <td>1716567cae119086</td> -->
+            <td>Soman, Nitish Subhash</td>
+            <td>Tus, 05 May 2020</td>
+            <td>Image Attachment</td>
+  
+            <td>
+              Hello Nitish,
+
+            I am attaching an image attachment along with this email.
+            
+            Thanks and regards,
+            Nitish Soman
+            Attachment Details: The attachment along with this email is Surprise.jpg. The Attachment type is image/jpeg. The Attachment size is 26.72 MB. his attachment image has labels like Hair, Face, Facial expression, Nose, Lip, Head, Beauty,
+            Cheek, Long hair, Mouth . It has someone face with Surprise expression. It has some text are gettyimages 25           CoffeeAndMik 927570754 gettyimages 25 CoffeeAndMik 927570754 
+            </td>
+          </tr>
+          
+        <tr>
+          <!-- <td>1716567cae119086</td> -->
+          <td>Soman, Nitish Subhash</td>
+          <td>Fri, 01 May 2020</td>
+          <td>Testing AWS</td>
+
+          <td>
+            Amazon Elastic Container Service released a new CLI with an
+            emphasis on usability and developer productivity to quickly launch
+            and easily manage applications on ECS powered by AWS Fargate. The
+            new ECS CLI in preview provides a simple declarative set of
+            commands including examples and guided experiences built in to
+            help customers deploy quickly.
+          </td>
+        </tr>
+        <tr>
+          <!-- <td>17165671cfad8816</td> -->
+          <td>Soman, Nitish Subhash</td>
+          <td>Sun,26 Apr 2020</td>
+          <td>Test Email</td>
+          <td>
+            While Machine Learning has been around for decades, the cloud
+            enables it to be applied at scale. Data lakes on AWS can help you
+            collect, store, prepare, and categorize the data, making it
+            readily available for all of your ML learning projects. AWS
+            Competency Partners provide industry-leading consulting and
+            technology services for a variety of use cases, check out our
+            featured content and discover how they can help you to maximize
+            the value of data lakes.
+          </td>
+        </tr>
+        <tr>
+          <!-- <td>1716566549f08345</td> -->
+          <td>Amazon Web Services</td>
+          <td>Tus, 21 Apr 2020</td>
+          <td>Amazon AWS Elastic File System</td>
+          <td>
+            Using Amazon Elastic File System (Amazon EFS) Lifecycle
+            Management, you can run and scale a fully managed NFS file system
+            for $0.08/GB*. Learn more about Amazon EFS fully managed NFS file
+            systems, including how easy it is to move your file workloads to
+            the AWS Cloud and reduce the TCO of operating an NFS file system
+            at the same time.
+          </td>
+        </tr>
+        <tr>
+          <!-- <td>17165651985fa42e</td> -->
+          <td>Soman, Nitish Subhash</td>
+          <td>Fri, 17 Apr 2020</td>
+          <td>Test AWS Cloud Sector Summit</td>
+          <td>
+            At the AWS Public Sector Summit in Washington, DC, educators find
+            best practices on how peers are using the cloud to innovate their
+            work on behalf of students. From empowering research and
+            scientific discovery to providing real-time data analytics to
+            improve the student experience, this event will provide you with
+            the tools and network you need to accelerate your work. Start or
+            advance your cloud journey by attending the AWS Public Sector
+            Summit.
+          </td>
+        </tr>
+        <tr>
+          <!-- <td>17164d986b25f4c5</td> -->
+          <td>Google for Education</td>
+          <td>Sun, 12 Apr 2020</td>
+          <td>Introducing Teach from Home</td>
+          <td>The link acts as a dedicated meeting space for each class, making it easy for both teachers and students to join. This means if the instructor is the last person to leave a nicknamed meeting, students can’t join again until an instructor restarts the nicknamed meeting. Administrators can grant meeting creation privileges to individuals or groups, and we recommend that you assign creation privileges to the organizational units (OUs) that contain your faculty and staff members, which means that students will only be able to join meetings created by faculty or staff. In Meet, all data is encrypted in transit by default between the client and Google for video meetings on a web browser, on the Android and iOS apps, and in meeting rooms with Google meeting room hardware. Each Meeting ID is 10 characters long, with 25 characters in the set, so it’s difficult to make an unauthorized attempt to join the meeting by guessing the ID.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br />
+
+  <!-- <iframe src="http://localhost:3000/" style="width: 100%; height: 600px;">
+        <p>Your browser does not support iframes.</p> 
+      </iframe> -->
+
+  <div class="container" style="padding-left: 85px;margin-bottom: 80px;">
+    <h1 style="text-align: center;margin-top: 90px; margin-bottom: 90px; padding-right: 65px;">
+      Features
+    </h1>
+    <div class="row">
+      <div class="col-4">
+        <img class="box" src="images/feature1.jpg" alt="Feature1" />
+      </div>
+      <div class="col-4">
+        <img class="box" src="images/feature2.jpg" alt="Feature2" />
+      </div>
+      <div class="col-4">
+        <img class="box" src="images/feature3.jpg" alt="Feature3" />
+      </div>
+    </div>
+    <div class="row" style="margin-top: 25px;">
+      <div class="col-4">
+        <img class="box" src="images/feature4.jpg" alt="Feature4" />
+      </div>
+      <div class="col-4">
+        <img class="box" src="images/feature5.jpg" alt="Feature5" />
+      </div>
+      <div class="col-4">
+        <img class="box" src="images/feature6.jpg" alt="Feature6" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="copyright text-center my-auto">
+      <span>Copyright &copy; Demo Website 2020</span>
+    </div>
+  </footer>
+
+  <script>
+    var i = 0;
+    var j = 0;
+    var nextEmail = "";
+    var nextSender = "";
+    let audioPlayer2 = "";
+    function setup() {
+      //  debugger;
+      // document.getElementById("audio2").addEventListener(
+      //   "ended",
+      //   function() {
+      //     i++;
+      //     if (i <= 4) {
+      //       nextSender = "/music/sender" + i + ".mp3";
+      //       // nextEmail = "/music/output" + i + ".mp3";
+      //       audioPlayer1 = document.getElementById("audio1");
+      //       document.getElementById("lblSender").innerHTML = i;
+      //       console.log("Playing Sender Audio: " + i);
+      //       audioPlayer1.src = nextSender;
+      //       audioPLayer1.load();
+      //       audioPlayer1.play();
+      //       // audioPlayer.src = nextEmail;
+      //     } else {
+      //       i = 0;
+      //       nextSender = "/music/sender" + i + ".mp3";
+      //       // nextEmail = "/music/output" + i + ".mp3";
+      //       audioPlayer1 = document.getElementById("audio1");
+      //       document.getElementById("lblSender").innerHTML = i;
+      //       audioPlayer1.src = nextSender;
+      //       //audioPlayer.src = nextEmail;
+      //       audioPLayer1.load();
+      //       audioPlayer1.play();
+      //     }
+      //     console.log("End:");
+      //   },
+      //   false
+      // );
+
+      // document.getElementById("audio1").addEventListener(
+      //   "ended",
+      //   function() {
+      //     j++;
+      //     if ((i <= 4) & (j != 0)) {
+      //       // nextSender = "/music/sender" + i + ".mp3";
+      //       nextEmail = "/music/output" + i + ".mp3";
+      //       audioPlayer2 = document.getElementById("audio2");
+      //       document.getElementById("lblName").innerHTML = i;
+      //       console.log("Playing Email Audio: " + i);
+      //       // audioPlayer.src = nextSender;
+      //       audioPlayer2.src = nextEmail;
+      //       audioPLayer2.load();
+      //       audioPlayer2.play();
+      //     } else {
+      //       i = 0;
+      //       // nextSender = "/music/sender" + i + ".mp3";
+      //       nextEmail = "/music/output" + i + ".mp3";
+      //       audioPlayer2 = document.getElementById("audio2");
+      //       document.getElementById("lblName").innerHTML = i;
+      //       // audioPlayer.src = nextSender;
+      //       audioPlayer2.src = nextEmail;
+      //       audioPLayer2.load();
+      //       audioPlayer2.play();
+      //     }
+      //     i++;
+      //     console.log("End:");
+      //   },
+      //   false
+      // );
+      i = 0;
+      document.getElementById("audio2").addEventListener(
+        "ended",
+        function () {
+          // debugger;
+          i++;
+          console.log("i: " + i);
+          if (i < 3) {
+            // nextSender = "/music/sender" + i + ".mp3";
+            nextEmail = "/music/email" + i + ".mp3";
+            audioPlayer2 = document.getElementById("audio2");
+            document.getElementById("lblName").innerHTML = i;
+            console.log("Playing Email Audio: " + i);
+            // audioPlayer.src = nextSender;
+            audioPlayer2.src = nextEmail;
+            // audioPLayer2.load();
+            audioPlayer2.play();
+          } else {
+            i = 0;
+            // nextSender = "/music/sender" + i + ".mp3";
+            nextEmail = "/music/email" + i + ".mp3";
+            audioPlayer2 = document.getElementById("audio2");
+            document.getElementById("lblName").innerHTML = i;
+            // audioPlayer.src = nextSender;
+            audioPlayer2.src = nextEmail;
+            // audioPLayer2.load();
+            audioPlayer2.play();
+          }
+
+          console.log("End:");
+        }
+        // false
+      );
+    }
+    var k = 0;
+    function play() {
+      k++;
+      console.log(k);
+      if (k < 3) {
+        // nextSender = "/music/sender" + i + ".mp3";
+        nextEmail = "/music/email" + k + ".mp3";
+        audioPlayer2 = document.getElementById("audio2");
+        document.getElementById("lblName").innerHTML = k;
+        console.log("Playing Email Audio: " + k);
+        // audioPlayer.src = nextSender;
+        audioPlayer2.src = nextEmail;
+        // audioPLayer2.load();
+        audioPlayer2.play();
+      } else {
+        k = 0;
+        // nextSender = "/music/sender" + i + ".mp3";
+        nextEmail = "/music/email" + k + ".mp3";
+        audioPlayer2 = document.getElementById("audio2");
+        document.getElementById("lblName").innerHTML = i;
+        // audioPlayer.src = nextSender;
+        audioPlayer2.src = nextEmail;
+        // audioPLayer2.load();
+        audioPlayer2.play();
+      }
+
+      console.log("End:");
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
